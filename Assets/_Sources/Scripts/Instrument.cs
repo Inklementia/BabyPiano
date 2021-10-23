@@ -15,12 +15,20 @@ public class Instrument : MonoBehaviour
         // audio clips to AudioSource component
         foreach (Note note in Notes)
         {
-            note.Source = gameObject.AddComponent<AudioSource>();
-            note.Source.clip = note.Clip;
+            // creating audiosource for long sound
+            note.SourceForLongSound = gameObject.AddComponent<AudioSource>();
+            note.SourceForLongSound.clip = note.LongSound;
 
-            note.Source.outputAudioMixerGroup = note.Output;
+            note.SourceForLongSound.outputAudioMixerGroup = note.Output;
+
+            // creating audiosource for short sound
+            note.SourceForShortSound = gameObject.AddComponent<AudioSource>();
+            note.SourceForShortSound.clip = note.ShortSound;
+
+            note.SourceForShortSound.outputAudioMixerGroup = note.Output;
         }
 
-
     }
+
+
 }

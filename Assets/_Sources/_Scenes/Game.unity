@@ -285,6 +285,7 @@ GameObject:
   - component: {fileID: 28612794}
   - component: {fileID: 28612793}
   - component: {fileID: 28612795}
+  - component: {fileID: 28612796}
   m_Layer: 5
   m_Name: WhiteKey7
   m_TagString: Untagged
@@ -392,19 +393,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 28612793}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 12
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &28612796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28612791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 12
 --- !u!1 &57990530
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +421,7 @@ GameObject:
   - component: {fileID: 57990533}
   - component: {fileID: 57990532}
   - component: {fileID: 57990534}
+  - component: {fileID: 57990535}
   m_Layer: 5
   m_Name: BlackKey1
   m_TagString: Untagged
@@ -524,19 +529,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 57990532}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &57990535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57990530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 2
 --- !u!1 &67214037
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,49 +652,49 @@ MonoBehaviour:
   InstrumentType: 1
   Notes:
   - Name: 1
-    Clip: {fileID: 8300000, guid: f68a4a0f51cd53041a7ff6d250377ddc, type: 3}
+    LongSound: {fileID: 0}
+    ShortSound: {fileID: 0}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 2
-    Clip: {fileID: 8300000, guid: a1e3221f8fbf8774eaccd0e50ceb7186, type: 3}
+    LongSound: {fileID: 0}
+    ShortSound: {fileID: 0}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 3
-    Clip: {fileID: 8300000, guid: fe303a5b6f235d64792c03f3041f4153, type: 3}
+    LongSound: {fileID: 0}
+    ShortSound: {fileID: 0}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 4
-    Clip: {fileID: 8300000, guid: 994957b366ee737429324af41701b363, type: 3}
+    LongSound: {fileID: 0}
+    ShortSound: {fileID: 0}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 5
-    Clip: {fileID: 8300000, guid: de2dfa8ee8712884e98f784d0c3fdff1, type: 3}
+    LongSound: {fileID: 0}
+    ShortSound: {fileID: 0}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 6
-    Clip: {fileID: 8300000, guid: 8ec8bf5634f32c74598135a99251ba3f, type: 3}
+    LongSound: {fileID: 0}
+    ShortSound: {fileID: 0}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 7
-    Clip: {fileID: 8300000, guid: 79e5515f410da2a41aae006f0dff3b7c, type: 3}
+    LongSound: {fileID: 0}
+    ShortSound: {fileID: 0}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 8
-    Clip: {fileID: 8300000, guid: 0cc27088b3371674fb84837a9d90f9cb, type: 3}
+    LongSound: {fileID: 0}
+    ShortSound: {fileID: 0}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 9
-    Clip: {fileID: 8300000, guid: 370751fe492b76c4dab566a219cb328b, type: 3}
+    LongSound: {fileID: 0}
+    ShortSound: {fileID: 0}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 10
-    Clip: {fileID: 8300000, guid: 05d066b1e7fb0fb43aaaa2665c4218e1, type: 3}
+    LongSound: {fileID: 0}
+    ShortSound: {fileID: 0}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 11
-    Clip: {fileID: 8300000, guid: 2204ef0bc89e55249a64a78377ef9bd3, type: 3}
+    LongSound: {fileID: 0}
+    ShortSound: {fileID: 0}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
 --- !u!4 &91885130
 Transform:
   m_ObjectHideFlags: 0
@@ -713,6 +721,7 @@ GameObject:
   - component: {fileID: 117179572}
   - component: {fileID: 117179571}
   - component: {fileID: 117179573}
+  - component: {fileID: 117179574}
   m_Layer: 5
   m_Name: WhiteKey2
   m_TagString: Untagged
@@ -820,19 +829,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 117179571}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &117179574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117179569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 3
 --- !u!1 &143614837
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,77 +953,77 @@ MonoBehaviour:
   InstrumentType: 0
   Notes:
   - Name: 1
-    Clip: {fileID: 8300000, guid: f68a4a0f51cd53041a7ff6d250377ddc, type: 3}
+    LongSound: {fileID: 8300000, guid: f68a4a0f51cd53041a7ff6d250377ddc, type: 3}
+    ShortSound: {fileID: 8300000, guid: 378bcd91e10165e4091db047d1a85c3a, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 2
-    Clip: {fileID: 8300000, guid: a1e3221f8fbf8774eaccd0e50ceb7186, type: 3}
+    LongSound: {fileID: 8300000, guid: a1e3221f8fbf8774eaccd0e50ceb7186, type: 3}
+    ShortSound: {fileID: 8300000, guid: c9e86219847cc6f49badc99ed3983968, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 3
-    Clip: {fileID: 8300000, guid: fe303a5b6f235d64792c03f3041f4153, type: 3}
+    LongSound: {fileID: 8300000, guid: fe303a5b6f235d64792c03f3041f4153, type: 3}
+    ShortSound: {fileID: 8300000, guid: dbc46ee0d59da0c4ab0d4668d2db5e2f, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 4
-    Clip: {fileID: 8300000, guid: 994957b366ee737429324af41701b363, type: 3}
+    LongSound: {fileID: 8300000, guid: 994957b366ee737429324af41701b363, type: 3}
+    ShortSound: {fileID: 8300000, guid: 14392136af4ddfe4389f773922defcb2, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 5
-    Clip: {fileID: 8300000, guid: de2dfa8ee8712884e98f784d0c3fdff1, type: 3}
+    LongSound: {fileID: 8300000, guid: de2dfa8ee8712884e98f784d0c3fdff1, type: 3}
+    ShortSound: {fileID: 8300000, guid: 1a63dcd3ffcf1154b9e0a2dba59f7b53, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 6
-    Clip: {fileID: 8300000, guid: 8ec8bf5634f32c74598135a99251ba3f, type: 3}
+    LongSound: {fileID: 8300000, guid: 8ec8bf5634f32c74598135a99251ba3f, type: 3}
+    ShortSound: {fileID: 8300000, guid: 23d4efda2218d4f48bf8f7bd4a406675, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 7
-    Clip: {fileID: 8300000, guid: 79e5515f410da2a41aae006f0dff3b7c, type: 3}
+    LongSound: {fileID: 8300000, guid: 79e5515f410da2a41aae006f0dff3b7c, type: 3}
+    ShortSound: {fileID: 8300000, guid: 29955c8d818673644a00824310060ac8, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 8
-    Clip: {fileID: 8300000, guid: 0cc27088b3371674fb84837a9d90f9cb, type: 3}
+    LongSound: {fileID: 8300000, guid: 0cc27088b3371674fb84837a9d90f9cb, type: 3}
+    ShortSound: {fileID: 8300000, guid: edb3b9623b01e7f428b2dd52e1038dfb, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 9
-    Clip: {fileID: 8300000, guid: 370751fe492b76c4dab566a219cb328b, type: 3}
+    LongSound: {fileID: 8300000, guid: 370751fe492b76c4dab566a219cb328b, type: 3}
+    ShortSound: {fileID: 8300000, guid: 66ea26f0377f9394ebb4c8a2caf86435, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 10
-    Clip: {fileID: 8300000, guid: 05d066b1e7fb0fb43aaaa2665c4218e1, type: 3}
+    LongSound: {fileID: 8300000, guid: 05d066b1e7fb0fb43aaaa2665c4218e1, type: 3}
+    ShortSound: {fileID: 8300000, guid: 12139ef9393ffdc47af7e4fd8e0adae7, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 11
-    Clip: {fileID: 8300000, guid: 2204ef0bc89e55249a64a78377ef9bd3, type: 3}
+    LongSound: {fileID: 8300000, guid: 2204ef0bc89e55249a64a78377ef9bd3, type: 3}
+    ShortSound: {fileID: 8300000, guid: 17234e49a6a46064e9addd77d0bd4f8c, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 12
-    Clip: {fileID: 8300000, guid: 7b2ec1ccc3aee744aaa2cc289eda1b36, type: 3}
+    LongSound: {fileID: 8300000, guid: 7b2ec1ccc3aee744aaa2cc289eda1b36, type: 3}
+    ShortSound: {fileID: 8300000, guid: 17947962af7d28a43951064811711175, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 13
-    Clip: {fileID: 8300000, guid: 30ebccfcb6e9c7c45a259c37da2162f6, type: 3}
+    LongSound: {fileID: 8300000, guid: 30ebccfcb6e9c7c45a259c37da2162f6, type: 3}
+    ShortSound: {fileID: 8300000, guid: b842371d2aef5294a835d3e975c9073b, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 14
-    Clip: {fileID: 8300000, guid: d45519efa77efb04aa88c5f69fbca642, type: 3}
+    LongSound: {fileID: 8300000, guid: d45519efa77efb04aa88c5f69fbca642, type: 3}
+    ShortSound: {fileID: 8300000, guid: 189caa8519b19e4489769510fe91ccce, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 15
-    Clip: {fileID: 8300000, guid: 9420f3e522b41da45aadcb0828bd339d, type: 3}
+    LongSound: {fileID: 8300000, guid: 9420f3e522b41da45aadcb0828bd339d, type: 3}
+    ShortSound: {fileID: 8300000, guid: 93b765b7c3baabd4ba0cb94ff31827cb, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 16
-    Clip: {fileID: 8300000, guid: 8447e4251840ae54bba97ad37ac6dad8, type: 3}
+    LongSound: {fileID: 8300000, guid: 8447e4251840ae54bba97ad37ac6dad8, type: 3}
+    ShortSound: {fileID: 8300000, guid: 160ac285a768bdc4896ab48fb534a923, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 17
-    Clip: {fileID: 8300000, guid: 57b209f08b2fd254683a763e4210e88b, type: 3}
+    LongSound: {fileID: 8300000, guid: 57b209f08b2fd254683a763e4210e88b, type: 3}
+    ShortSound: {fileID: 8300000, guid: 8e3b4f30caca3aa4cbdebe00b755e6b2, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
   - Name: 18
-    Clip: {fileID: 8300000, guid: a5ec2b01afe02a44f9bfa4a24ce616ca, type: 3}
+    LongSound: {fileID: 8300000, guid: a5ec2b01afe02a44f9bfa4a24ce616ca, type: 3}
+    ShortSound: {fileID: 8300000, guid: 9c9cac4d12142e140a68b29b6898189a, type: 3}
     Output: {fileID: 24300002, guid: 66f808ac88f01f4419d86a5feecfd381, type: 2}
-    Source: {fileID: 0}
 --- !u!4 &310520868
 Transform:
   m_ObjectHideFlags: 0
@@ -1399,6 +1411,7 @@ GameObject:
   - component: {fileID: 633817399}
   - component: {fileID: 633817401}
   - component: {fileID: 633817400}
+  - component: {fileID: 633817405}
   - component: {fileID: 633817402}
   m_Layer: 5
   m_Name: WhiteKey1
@@ -1473,6 +1486,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 633817398}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 1
+--- !u!114 &633817405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633817398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -1507,19 +1535,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 633817400}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &708882159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,6 +1548,7 @@ GameObject:
   - component: {fileID: 708882162}
   - component: {fileID: 708882161}
   - component: {fileID: 708882163}
+  - component: {fileID: 708882164}
   m_Layer: 5
   m_Name: BlackKey3
   m_TagString: Untagged
@@ -1639,19 +1656,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 708882161}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 7
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &708882164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708882159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 7
 --- !u!1 &776708362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1664,6 +1684,7 @@ GameObject:
   - component: {fileID: 776708365}
   - component: {fileID: 776708364}
   - component: {fileID: 776708366}
+  - component: {fileID: 776708367}
   m_Layer: 5
   m_Name: BlackKey7
   m_TagString: Untagged
@@ -1771,19 +1792,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 776708364}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 16
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &776708367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776708362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 16
 --- !u!1 &801985995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1796,6 +1820,7 @@ GameObject:
   - component: {fileID: 801985998}
   - component: {fileID: 801985997}
   - component: {fileID: 801985999}
+  - component: {fileID: 801986000}
   m_Layer: 5
   m_Name: WhiteKey10
   m_TagString: Untagged
@@ -1903,19 +1928,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 801985997}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 17
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &801986000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801985995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 17
 --- !u!1 &805169861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1969,8 +1997,6 @@ GameObject:
   m_Component:
   - component: {fileID: 879753651}
   - component: {fileID: 879753650}
-  - component: {fileID: 879753653}
-  - component: {fileID: 879753652}
   m_Layer: 0
   m_Name: InstrumentManager
   m_TagString: Untagged
@@ -2010,116 +2036,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &879753652
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879753649}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f68a4a0f51cd53041a7ff6d250377ddc, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &879753653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879753649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cea181c65829d9641a2052b13da7b563, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audio: {fileID: 879753652}
-  transpose: -4
 --- !u!1 &912198340
 GameObject:
   m_ObjectHideFlags: 0
@@ -2132,6 +2048,7 @@ GameObject:
   - component: {fileID: 912198343}
   - component: {fileID: 912198342}
   - component: {fileID: 912198344}
+  - component: {fileID: 912198345}
   m_Layer: 5
   m_Name: BlackKey5
   m_TagString: Untagged
@@ -2239,19 +2156,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 912198342}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 11
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &912198345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912198340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 11
 --- !u!1 &918701715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2264,6 +2184,7 @@ GameObject:
   - component: {fileID: 918701718}
   - component: {fileID: 918701717}
   - component: {fileID: 918701719}
+  - component: {fileID: 918701720}
   m_Layer: 5
   m_Name: WhiteKey8
   m_TagString: Untagged
@@ -2371,19 +2292,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 918701717}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 13
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &918701720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918701715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 13
 --- !u!1 &949820774
 GameObject:
   m_ObjectHideFlags: 0
@@ -3122,7 +3046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _instrumentType: 0
-  _instrumentManager: {fileID: 879753650}
+  _instrumentManager: {fileID: 0}
 --- !u!114 &1112024718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3267,6 +3191,7 @@ GameObject:
   - component: {fileID: 1201186201}
   - component: {fileID: 1201186200}
   - component: {fileID: 1201186202}
+  - component: {fileID: 1201186203}
   m_Layer: 5
   m_Name: WhiteKey11
   m_TagString: Untagged
@@ -3374,19 +3299,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1201186200}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 18
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &1201186203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201186198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 18
 --- !u!1 &1296847379
 GameObject:
   m_ObjectHideFlags: 0
@@ -3805,6 +3733,7 @@ GameObject:
   - component: {fileID: 1387460403}
   - component: {fileID: 1387460402}
   - component: {fileID: 1387460404}
+  - component: {fileID: 1387460405}
   m_Layer: 5
   m_Name: WhiteKey4
   m_TagString: Untagged
@@ -3912,19 +3841,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1387460402}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &1387460405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387460400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 6
 --- !u!1 &1429144784
 GameObject:
   m_ObjectHideFlags: 0
@@ -3937,6 +3869,7 @@ GameObject:
   - component: {fileID: 1429144787}
   - component: {fileID: 1429144786}
   - component: {fileID: 1429144788}
+  - component: {fileID: 1429144789}
   m_Layer: 5
   m_Name: WhiteKey3
   m_TagString: Untagged
@@ -4044,19 +3977,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1429144786}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &1429144789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429144784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 5
 --- !u!1 &1429686722
 GameObject:
   m_ObjectHideFlags: 0
@@ -4069,6 +4005,7 @@ GameObject:
   - component: {fileID: 1429686725}
   - component: {fileID: 1429686724}
   - component: {fileID: 1429686726}
+  - component: {fileID: 1429686727}
   m_Layer: 5
   m_Name: BlackKey6
   m_TagString: Untagged
@@ -4176,19 +4113,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1429686724}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 14
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &1429686727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429686722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 14
 --- !u!1 &1451794546
 GameObject:
   m_ObjectHideFlags: 0
@@ -4354,7 +4294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _instrumentType: 1
-  _instrumentManager: {fileID: 879753650}
+  _instrumentManager: {fileID: 0}
 --- !u!114 &1465882923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4423,6 +4363,7 @@ GameObject:
   - component: {fileID: 1549025708}
   - component: {fileID: 1549025707}
   - component: {fileID: 1549025709}
+  - component: {fileID: 1549025710}
   m_Layer: 5
   m_Name: BlackKey4
   m_TagString: Untagged
@@ -4530,19 +4471,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1549025707}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 9
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &1549025710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549025705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 9
 --- !u!1 &1662527771
 GameObject:
   m_ObjectHideFlags: 0
@@ -4621,6 +4565,7 @@ GameObject:
   - component: {fileID: 1732532144}
   - component: {fileID: 1732532143}
   - component: {fileID: 1732532145}
+  - component: {fileID: 1732532146}
   m_Layer: 5
   m_Name: WhiteKey5
   m_TagString: Untagged
@@ -4728,19 +4673,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1732532143}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 8
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &1732532146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732532141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 8
 --- !u!1 &1815273283
 GameObject:
   m_ObjectHideFlags: 0
@@ -4986,6 +4934,7 @@ GameObject:
   - component: {fileID: 1958688044}
   - component: {fileID: 1958688043}
   - component: {fileID: 1958688045}
+  - component: {fileID: 1958688046}
   m_Layer: 5
   m_Name: BlackKey2
   m_TagString: Untagged
@@ -5093,19 +5042,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1958688043}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &1958688046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958688041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 4
 --- !u!1 &1975386932
 GameObject:
   m_ObjectHideFlags: 0
@@ -5193,6 +5145,7 @@ GameObject:
   - component: {fileID: 2002878976}
   - component: {fileID: 2002878975}
   - component: {fileID: 2002878977}
+  - component: {fileID: 2002878978}
   m_Layer: 5
   m_Name: WhiteKey6
   m_TagString: Untagged
@@ -5300,19 +5253,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2002878975}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &2002878978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002878973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 10
 --- !u!1 &2031097488
 GameObject:
   m_ObjectHideFlags: 0
@@ -5325,6 +5281,7 @@ GameObject:
   - component: {fileID: 2031097491}
   - component: {fileID: 2031097490}
   - component: {fileID: 2031097492}
+  - component: {fileID: 2031097493}
   m_Layer: 5
   m_Name: WhiteKey9
   m_TagString: Untagged
@@ -5432,19 +5389,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2031097490}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879753650}
-        m_TargetAssemblyTypeName: InstrumentManager, Assembly-CSharp
-        m_MethodName: OnKeyPress
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 15
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &2031097493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031097488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7b855848b63fe34fbe311e714bab878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _instrumentManager: {fileID: 879753650}
+  _requiredHoldTimerForLongSound: 0.2
+  _keyNumber: 15
 --- !u!1 &2056263398
 GameObject:
   m_ObjectHideFlags: 0

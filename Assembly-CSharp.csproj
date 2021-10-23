@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C88B8656-3E5E-D0B6-C2F9-43155BF9EE9C}</ProjectGuid>
+    <ProjectGuid>{13337A73-2DCC-5CEA-231C-1285F9FF287D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,9 +58,9 @@
     <Compile Include="Assets\_Sources\Scripts\InstrumentManager.cs" />
     <Compile Include="Assets\_Sources\Scripts\Instrument.cs" />
     <Compile Include="Assets\_Sources\Scripts\Note.cs" />
-    <Compile Include="Assets\_Sources\Scripts\ButtonKey.cs" />
-    <Compile Include="Assets\_Sources\Scripts\PitchShift.cs" />
     <Compile Include="Assets\_Sources\Scripts\TestSound.cs" />
+    <Compile Include="Assets\_Sources\Scripts\PitchShift.cs" />
+    <Compile Include="Assets\_Sources\Scripts\Key.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

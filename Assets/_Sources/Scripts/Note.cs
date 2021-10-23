@@ -7,7 +7,10 @@ using UnityEngine.Audio;
 public class Note
 {
     public string Name;
-    public AudioClip Clip;
+    public AudioClip LongSound;
+    public AudioClip ShortSound;
+
     public AudioMixerGroup Output;
-    [HideInInspector] public AudioSource Source;
+    public AudioSource SourceForLongSound { get; set; }
+    public AudioSource SourceForShortSound { get; set; }
 }
