@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637704253800372515
-    m_Hash: 641973833
+      ticks: 637713478891864983
+    m_Hash: 749822910
   m_LockFileStatus:
     m_FilePath: D:/unity_files/BabyPiano/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637704253896707354
-    m_Hash: 3171210189
+      ticks: 637713478891864983
+    m_Hash: 1182049367
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -133,6 +133,7 @@ m_PackageAssets:
         - 3.2.9
         - 3.2.10
         - 3.2.11
+        - 3.2.13
         - 4.0.0
         - 4.0.1
         - 4.1.0
@@ -165,6 +166,7 @@ m_PackageAssets:
         - 7.0.0-pre.3
         - 7.0.0
         - 7.0.1
+        - 8.0.0-pre.3
         compatible:
         - 5.0.6
         - 5.0.7
@@ -342,6 +344,7 @@ m_PackageAssets:
         - 2.1.5
         - 2.1.6
         - 2.1.8
+        - 2.1.9
         - 3.0.0
         - 3.1.1
         - 3.1.3
@@ -366,6 +369,7 @@ m_PackageAssets:
         - 6.0.0-pre.4
         - 6.0.0
         - 6.0.1
+        - 7.0.0-pre.3
         compatible:
         - 4.1.0
         - 4.1.1
@@ -556,6 +560,7 @@ m_PackageAssets:
         - 7.0.0-pre.3
         - 7.0.0
         - 7.0.2
+        - 8.0.0-pre.4
         compatible:
         - 5.1.4
         - 5.1.5
@@ -717,6 +722,8 @@ m_PackageAssets:
         - 1.11.2
         - 1.12.5
         - 1.13.5
+        - 1.14.1
+        - 1.15.1
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -731,6 +738,8 @@ m_PackageAssets:
         - 1.11.2
         - 1.12.5
         - 1.13.5
+        - 1.14.1
+        - 1.15.1
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -3438,6 +3447,7 @@ m_PackageAssets:
         - 6.0.0-pre.3
         - 6.0.0-pre.4
         - 6.0.0
+        - 7.0.0-pre.3
         compatible:
         - 4.0.3
         verified: 4.0.3

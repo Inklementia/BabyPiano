@@ -55,12 +55,12 @@
   <ItemGroup>
     <Compile Include="Assets\_Sources\Scripts\ButtonInstrumentChanger.cs" />
     <Compile Include="Assets\_Sources\Scripts\InstrumentType.cs" />
-    <Compile Include="Assets\_Sources\Scripts\InstrumentManager.cs" />
+    <Compile Include="Assets\_Sources\Scripts\Key.cs" />
+    <Compile Include="Assets\_Sources\Scripts\InstrumentHandler.cs" />
     <Compile Include="Assets\_Sources\Scripts\Instrument.cs" />
     <Compile Include="Assets\_Sources\Scripts\Note.cs" />
     <Compile Include="Assets\_Sources\Scripts\TestSound.cs" />
     <Compile Include="Assets\_Sources\Scripts\PitchShift.cs" />
-    <Compile Include="Assets\_Sources\Scripts\Key.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

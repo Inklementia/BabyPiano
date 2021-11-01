@@ -5,7 +5,7 @@ using UnityEngine;
 public class ButtonInstrumentChanger : MonoBehaviour
 {
     [SerializeField] private InstrumentType _instrumentType;
-    [SerializeField] private InstrumentManager _instrumentManager;
+    [SerializeField] private InstrumentHandler _instrumentManager;
 
     public void ChangeCurrentInstrument()
     {

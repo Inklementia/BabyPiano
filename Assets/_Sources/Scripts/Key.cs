@@ -13,44 +13,41 @@ public class Key : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private bool _pointerDown;
     private float _pointerDownTimer;
 
-    [SerializeField] private InstrumentManager _instrumentManager;
+    [SerializeField] private InstrumentHandler _instrumentHandler;
     [SerializeField] private float _requiredHoldTimerForLongSound = .2f;
     [SerializeField] private int _keyNumber;
 
     private void Start()
     {
-        _longSound = _instrumentManager.CurrentInstrument.Notes[_keyNumber - 1].SourceForLongSound;
-        _shortSound = _instrumentManager.CurrentInstrument.Notes[_keyNumber - 1].SourceForShortSound;
+        _longSound = _instrumentHandler.CurrentInstrument.GetLongSound(_keyNumber );
+        _shortSound = _instrumentHandler.CurrentInstrument.GetShortSound(_keyNumber);
     }
     public void OnPointerDown(PointerEventData eventData)
     {
         _pointerDown = true;
-        Debug.Log("note: "+ _longSound.name);
+        //Debug.Log("note: "+ _longSound.name);
+
+        //PlayKeyVisual();
+
+        _pointerDownTimer += Time.deltaTime;
+        if (_pointerDownTimer < _requiredHoldTimerForLongSound)
+        {
+            _currentSound = _shortSound;
+        }
+        else
+        {
+            _currentSound = _longSound;
+        }
+
+        _currentSound.Play();
     }
     public void OnPointerUp(PointerEventData eventData)
     {
-        _currentSound.Play();
+     
         ResetKey();
-        Debug.Log("pointer up");
+        //Debug.Log("pointer up");
     }
-    private void Update()
-    {
 
-        if (_pointerDown) {
-
-            //PlayKeyVisual();
-
-            _pointerDownTimer += Time.deltaTime;
-            if (_pointerDownTimer < _requiredHoldTimerForLongSound)
-            {
-                _currentSound = _shortSound;
-            }
-            else
-            {
-                _currentSound = _longSound;
-            }   
-        } 
-    }
     private void ResetKey()
     {
         _pointerDown = false;
