@@ -61,6 +61,15 @@
     <Compile Include="Assets\_Sources\Scripts\Note.cs" />
     <Compile Include="Assets\_Sources\Scripts\TestSound.cs" />
     <Compile Include="Assets\_Sources\Scripts\PitchShift.cs" />
+    <Compile Include="Assets\FatMachines\[Legacy]CarouselView\Example.cs" />
+    <Compile Include="Assets\FatMachines\CarouselView\Scripts\CarouselView.cs" />
+    <Compile Include="Assets\FatMachines\CarouselView\ExampleScript.cs" />
+    <Compile Include="Assets\FatMachines\CarouselView\Scripts\CarouselItem.cs" />
+    <Compile Include="Assets\FatMachines\[Legacy]CarouselView\Scripts\Scaler.cs" />
+    <Compile Include="Assets\FatMachines\[Legacy]CarouselView\Scripts\Utils.cs" />
+    <Compile Include="Assets\FatMachines\CarouselView\Scripts\DeviceOrientation.cs" />
+    <Compile Include="Assets\FatMachines\[Legacy]CarouselView\Scripts\Scroller.cs" />
+    <Compile Include="Assets\_Sources\Scripts\InstrumentPanel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
