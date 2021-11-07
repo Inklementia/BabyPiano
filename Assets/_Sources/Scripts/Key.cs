@@ -46,6 +46,7 @@ public class Key : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPo
             if(_enterExitTimer < _requiredHoldTimerForLongSound && _exited)
             {
                 _currentSound = _shortSound;
+                Debug.Log("Short Sound" + _shortSound.isPlaying);
                 _currentSound.Play();
                 ResetKey();
             }
