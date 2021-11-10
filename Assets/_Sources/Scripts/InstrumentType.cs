@@ -9,5 +9,8 @@ public enum InstrumentType
     Harp,
     Balalaika,
     Flute,
-    Violin
+    Violonchel,
+    Ukulele,
+    Panpipes,
+    Trumpet
 }
